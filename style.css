@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    font-weight: 100;
+}
+
+.fondo {
+    background-image: url("./img/banner-heroe.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    opacity: 50%;
+}
+
+header {
+    padding: 20px 0;
+}
+
+header .container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 10px;
+    height: 7rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+nav ul {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5%;
+    font-weight: 300;
+    
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+.iconos-header ul {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5%;
+    font-size: 1.2em;
+    color: gray;
+}
+
+ /* ---------  Fin estilos para fondo y header ---------- */
+
+/* ----------  Comienzo estilos para HEROE  ------------- */
+
+#home {
+    height: 80vh;
+}
+.heroe {
+    width: 60%;
+    
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    margin: 0 auto;
+    padding: 2em;
+}
+.carrusel {
+    width: 30%;
+}
+
+.carrusel img{
+    width: 100%;
+
+}
+
+.text-heroe {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3em;
+}
+
+.text-heroe h1 {
+    font-weight: 100;
+    font-size: 3em;
+    text-align: center;
+}
+
+.text-heroe ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3em;
+}
+
+.text-heroe ul li {
+    display: flex;
+}
+
+.text-heroe ul li i {
+    color: rgb(73, 41, 73);
+    font-size: 2em;
+}
+
+.text-heroe ul h3 {
+    font-weight: 100;
+    font-size: 1.3em;
+    padding-left: 2rem;
+}
+
+/* ---------- FIN HEROE ---------- */
+
+ /* -----------  Comienzo section TIPOS DE MAMPARAS ---------------- */
+
+ #mamparas {
+    margin: 30px 0;
+ }
+
+ h2 {
+     text-align: center;
+     font-size: 2.5em;
+     font-weight: 100;
+     margin: 40px 0;
+ }
+
+ .text-mamparas {
+     max-width: 940px;
+     padding: 20px;
+     margin: 0 auto;
+     text-align: center;
+     font-size: 1.3em;
+     margin-bottom: 50px;
+
+ }
+ .container-cards {
+     max-width: 960px;
+
+     margin: 0 auto;
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+ }
+
+ .card {
+     width: 30%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 10px;
+     border: 1px solid rgb(233, 233, 233);
+     border-radius: 10px;
+     box-shadow: 5px 5px 4px rgb(228, 228, 228);
+ }
+
+ .card h3 {
+    font-size: 1.4em;
+    font-weight: 400;
+    padding: 10px;
+    color: rgb(24, 24, 78);
+    
+ }
+
+ .card-text {
+     height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ .card-text p {
+     padding: 10px;
+     font-weight: 300;
+     text-align: center;
+ }
+
+ .card-text a {
+     text-decoration: none;
+     font-weight: 400;
+     padding: 10px;
+     background-color: rgb(56, 135, 199);
+     color: white;
+     border-radius: 8px;
+     margin-bottom: 15px;
+
+ }
+
+
+ /* --------- Fin TIPO DE MAMPARAS --------------- */
+
+ /* ----------- COMIENZO PRESUPUESTO (Form)  -------------- */
+
+
+.container-form {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    gap: 8%;
+
+}
+
+form {
+    padding: 60px;
+    max-width: 600px;
+    background-color: #E7E7E7;
+    margin: 0 auto;
+  }
+
+form input {
+    margin-bottom: 15px;
+    width: 420px;
+    padding: 10px;
+    
+    border: none;
+    color: #525c66;
+    font-size: 1em;
+    resize: horizontal;
+    border-radius: 5px;
+}
+
+.button {
+    background-color: rgb(28, 28, 94);
+    color: white;
+    margin-top: 50px;
+}
+
+.ejemplo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ejemplo h3 {
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.ejemplo span {
+    font-weight: 500;
+    color: rgb(28, 28, 94);
+}
+
+.ejemplo p {
+    font-weight: 300;
+    font-size: 1.3em;
+    text-align: center;
+}

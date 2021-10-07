@@ -1,155 +1,249 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mamparas para baño - Cordoba</title>
 
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Estilos -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <div class="fondo">
+
+    </div>
     <header>
+
         <div class="container">
-            <div>
-                <img src="" alt="">
+            <div class="logo">
+                <img src="./img/logo.png" alt="">
             </div>
-            <div>
-                <nav>
-                    <ul>
-                        <li>HOME</li>
-                        <li>MAMPARAS</li>
-                        <li>PRESUPUESTO</li>
-                        <li>GALERIA</li>
-                        <li>NOSOTROS</li>
-                    </ul>
-                </nav>
-            </div>
-            <div>
+
+            <nav>
                 <ul>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="#mamparas">MAMPARAS</a></li>
+                    <li><a href="">PRESUPUESTO</a></li>
+                    <li><a href="">GALERIA</a></li>
+                    <li><a href="">NOSOTROS</a></li>
+                </ul>
+            </nav>
+
+            <div class="iconos-header">
+                <ul>
+                    <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram-square"></i></a></li>
+                    <li><a href=""><i class="fas fa-envelope-square"></i></a></li>
                 </ul>
             </div>
 
-        </div>        
+        </div>
 
     </header>
 
     <main>
-        <section>
+        <section id="home">
             <div class="heroe">
-                <div></div>
-                <div>
+                <div class="carrusel">
+                    <img src="./img/1-carrousel.jpg" alt="">
+                </div>
+                <div class="text-heroe">
                     <h1>MAMPARAS</h1>
                     <ul>
-                        <li><h3>Mamparas fabricadas a medida de alta prestacion.</h3></li>
-                        <li><h3>Uso de vidrios de seguridad.</h3></li>
-                        <li><h3>Servicio de colocación.</h3></li>
+                        <li><i class="fas fa-check"></i>
+                            <h3>Mamparas fabricadas a medida de alta prestacion.</h3>
+                        </li>
+                        <li><i class="fas fa-check"></i>
+                            <h3>Uso de vidrios de seguridad.</h3>
+                        </li>
+                        <li><i class="fas fa-check"></i>
+                            <h3>Servicio de colocación.</h3>
+                        </li>
                     </ul>
                 </div>
             </div>
 
         </section>
 
-        <section>
-            <h2>Tipo de mamparas</h2>
-            <p>Trabajamos distintas tipologias de mamparas como fijas, rebatibles y corredizas, las cuales pueden combinarse para brindar soluciones que se ajusten
-                a la necesidad.
-                Cualquiera puede ir colocado en baños que dispongan de ducha a piso o con bañera.
-            </p>
-            <p>La elección mas conveniente va a depender de las dimensiones y disposición de los elementos en el baño.
-            </p>
+        <section id="mamparas">
+            <h2>Tipos de mamparas</h2>
+            <div class="text-mamparas">
+                <p>Trabajamos distintas tipologias de mamparas como fijas, rebatibles y corredizas, las cuales pueden
+                    combinarse para brindar soluciones que se ajusten
+                    a la necesidad.
+                    Cualquiera puede ir colocada en baños que dispongan de ducha a piso o con bañera.
+                </p>
+                <br>
+                <p><b>La elección mas conveniente va a depender de las dimensiones y disposición de los elementos en el
+                        baño.
+                    </b> </p>
+            </div>
 
-            <div>
+
+            <div class="container-cards">
                 <div class="card">
-                    <h3>Fija</h3> 
-                    <div><img src="" alt=""></div>
-                    <div>
-                        <p>Consiste en un vidrio de seguridad que va montado de manera fija proximo a la ducha. Debe considerarse un espacio abierto que permita el acceso.</p>
+                    <h3>Fija</h3>
+                    <div><img src="./img/fija.png" alt=""></div>
+                    <div class="card-text">
+                        <p>Consiste en un vidrio de seguridad que va montado de manera fija proximo a la ducha. Debe
+                            considerarse un espacio abierto que permita el acceso.</p>
                         <a href="">Ver en galería</a>
                     </div>
-                
+
                 </div>
 
-                <div>
+                <div class="card">
                     <h3>Rebatible</h3>
-                    <div><img src="" alt=""></div>
-                    <div>
-                        <p>Similar en dimensiones y disposición a la mampara fija, pero la gran diferencia radica en que el vidrio puede rebatirse, facilitando el acceso.
+                    <div><img src="./img/rebatible.gif" alt=""></div>
+                    <div class="card-text">
+                        <p>Similar en dimensiones y disposición a la mampara fija, pero la gran diferencia radica en que
+                            el vidrio puede rebatirse, facilitando el acceso.
                             A esta tipología se la puede acoplar a un paño fijo</p>
                         <a href="">Ver en galería</a>
                     </div>
                 </div>
 
-                <div>
+                <div class="card">
                     <h3>Corrediza</h3>
-                    <div><img src="" alt=""></div>
-                    <div>
-                        <p>Consta de dos paños de vidrio, uno fijo y uno movil,  cada uno tiene la mitad del ancho total. El movil se desliza hacia un costado para pemitir el acceso a la ducha o bañera. 
-                            Existen variantes para espacios mas amplios, en donde pueden existir 3 o 4 paños de vidrio, algunos fijo y otros corredizos.</p>
+                    <div><img src="./img/corrediza.gif" alt=""></div>
+                    <div class="card-text">
+                        <p>Consta de dos paños de vidrio, uno fijo y uno movil, cada uno tiene la mitad del ancho total.
+                            Existen variantes para espacios mas amplios, en donde pueden existir 3 o 4 paños de vidrio,
+                            algunos fijo y otros corredizos.</p>
                         <a href="">Ver en galería</a>
                     </div>
                 </div>
-                
+
             </div>
 
         </section>
 
         <section>
             <h2>Pedí tu presupuesto</h2>
-            <div>
-                <div>
-                    <form action="">
-                        <label for="">Nombre y apellido</label>
-                        <input type="text">
-    
-                        <label for="">Provincia</label>
-                        <input type="text">
-    
-                        <label for="">Localidad</label>
-                        <input type="text">
-    
-                        <label for="">Telefono</label>
-                        <input type="tel" name="" id="">
-    
-                        <label for="">Email</label>
-                        <input type="email" name="" id="">
-    
-                        <label for="">Tipo de mampara</label>
-                        <input list= "tipologias">
+            <div class="container-form">
+
+                <form action="">
+                    <div><input  class="input" type="text" placeholder="Nombre y apellido"></div>
+                    
+
+                    <div><input type="text" placeholder="Provincia"></div>
+                    
+
+                    <div><input type="text" placeholder="Localidad"></div>
+                    
+
+                    <div><input type="tel" name="" id="" placeholder="Telefono"></div>
+                    
+
+                    <div><input type="email" name="" id="" placeholder="Correo electronico"></div>
+                    
+                    <div><label for="">Tipo de mampara</label>
+                        <input list="tipologias">
                         <datalist id="tipologias">
                             <option value="Fija">
                             <option value="Rebatible">
                             <option value="Corrediza">
-                            
-                        </datalist>
     
-                        <label for="">Medida en cm (segun dibujo)</label>
-                        <input type="number" name="" id="">
-    
-                        <button>Enviar</button>
-                        
-                    </form>
-                </div>
+                        </datalist></div>
+                    
 
-                <div>
-                    <div><img src="" alt=""></div>
+                    <div><label for="">Medida en cm (segun dibujo)</label>
+                        <input type="number" name="" id=""></div>
+                    
+
+                    <div><input type="button" value="Enviar" class="button"></div>
+                    
+                </form>
+
+
+                <div class="ejemplo">
+                    <h3>
+                        Mampara tipo: <span>FIJA</span>
+                    </h3>
+                    <div><img src="./img/ejemplo-fija.png" alt=""></div>
                     <div>
-                        <p></p>
+                        <p>Especifique que medida (en centimetros) debe tener el ancho de la mampara fija (flecha roja).
+                            <br>
+                            <br>
+                            IMPORTANTE: considere que debe dejar un espacio para poder acceder a la ducha. Recomendamos 
+                            que el espacio para el acceso sea de 65cm por lo menos.</p>
                     </div>
                 </div>
             </div>
-            
+
         </section>
-        
+
+        <section id="galeria">
+            <div>
+                <img src="" alt="">
+                <div>
+                    <h3></h3>
+                </div>
+            </div>
+            <div>
+                <img src="" alt="">
+                <div>
+                    <h3></h3>
+                </div>
+            </div>
+            <div>
+                <img src="" alt="">
+                <div>
+                    <h3></h3>
+                </div>
+            </div>
+            <div>
+                <img src="" alt="">
+                <div>
+                    <h3></h3>
+                </div>
+            </div>
+            <div>
+                <img src="" alt="">
+                <div>
+                    <h3></h3>
+                </div>
+            </div>
+            <div>
+                <img src="" alt="">
+                <div>
+                    <h3></h3>
+                </div>
+            </div>
+
+        </section>
+        <section id="nosotros">
+            <div>
+                <img src="" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione hic natus maxime consectetur
+                    voluptatum aut nobis at qui fuga voluptates alias, repellendus nulla mollitia numquam id vero.
+                    Dolores, quia expedita.</p>
+            </div>
+
+        </section>
+
 
     </main>
 
     <footer>
 
     </footer>
-    
+
 </body>
+
 </html>
