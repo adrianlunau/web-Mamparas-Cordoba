@@ -8,6 +8,7 @@ body {
     font-family: 'Roboto', sans-serif;
     position: relative;
     font-weight: 100;
+    width: 100%;
 }
 
 .fondo {
@@ -75,6 +76,27 @@ ul li {
     color: gray;
 }
 
+@media (max-width: 600px) {
+    header .container {
+        display: block;
+        height: auto;
+        padding: 2em;
+    }
+    .logo {
+        margin: 0 auto;
+    }
+
+    nav {
+        display: none;
+        
+    }
+
+    .iconos-header {
+        display: none;
+        
+    }
+  }
+
  /* ---------  Fin estilos para fondo y header ---------- */
 
 /* ----------  Comienzo estilos para HEROE  ------------- */
@@ -95,10 +117,18 @@ ul li {
     width: 30%;
 }
 
-.carrusel img{
-    width: 100%;
 
+.carousel {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
 }
+#imagen {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+}
+
 
 .text-heroe {
     width: 60%;
@@ -134,6 +164,28 @@ ul li {
     font-weight: 100;
     font-size: 1.3em;
     padding-left: 2rem;
+}
+
+
+@media (max-width: 600px) {
+  .heroe {
+    display: block;
+    width: 95%;
+    border: 1px solid rgb(52, 38, 66);
+  }
+  .carrusel {
+      width: 70%;
+      margin: 0 auto;
+  }
+
+  .text-heroe {
+      width: 100%;
+      gap: 0.5em;
+  }
+
+  h1 {
+      font-size: 1em;
+  }
 }
 
 /* ---------- FIN HEROE ---------- */
@@ -213,6 +265,26 @@ ul li {
 
  }
 
+ @media (max-width: 600px) {
+    #mamparas {
+        margin-top: 200px;
+    }
+
+    h2 {
+        margin: 10px auto;
+    }
+
+    .container-cards {
+        display: block;
+        
+    }
+
+    .card {
+        width: 85%;
+        margin: 2em auto;
+    }
+  }
+
 
  /* --------- Fin TIPO DE MAMPARAS --------------- */
 
@@ -274,3 +346,174 @@ form input {
     font-size: 1.3em;
     text-align: center;
 }
+
+@media (max-width: 600px) {
+    .container-form {
+        flex-direction: column;
+
+    }
+
+    .ejemplo {
+        order: 0;
+    }
+
+    form{
+        width: 100%;
+        order: 1;
+    }
+
+    form input {
+        width: 100%;
+    }
+  }
+
+/* ---------- Fin PRESUPUESTO ----------- */
+
+/* ----------- COMIENZO GALERIA -------------- */
+
+.container-galeria {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 350px auto;
+    justify-content: space-around;
+    justify-items: center;
+    gap: 15px;
+}
+
+.container-galeria div {
+    width: 350px;
+    height: 350px;
+    
+}
+
+.etiqueta {
+    background-color: rgb(51, 35, 51);
+    opacity: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.etiqueta h3 {
+    color: white;
+    font-weight: 300;
+    font-size: 2em;
+}
+
+.etiqueta:hover {
+    opacity: 0;
+}
+
+
+.galeria-1 {
+    background-image: url("./img/gal-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0px;
+}
+
+.galeria-2 {
+    background-image: url("./img/gal-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.galeria-3 {
+    background-image: url("./img/gal-3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.galeria-4 {
+    background-image: url("./img/gal-4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.galeria-5 {
+    background-image: url("./img/gal-5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.galeria-6 {
+    background-image: url("./img/gal-6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 600px) {
+
+    .container-galeria div {
+        width: 180px;
+        height: 180px;
+        
+    }
+    .container-galeria {
+        width: 90%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 180px auto;
+        
+    }
+
+
+  }
+
+ /* ------------ FIN GALERIA ---------------- */
+
+ /* -------------- COMIENZA NOSOTROS ------------ */
+
+ .cont {
+    background-color: rgb(28, 28, 94);;
+ }
+
+ .container-nosotros {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 5em;
+     
+     padding: 2em 0;
+     max-width: 1200px;
+     margin: 0 auto;
+ }
+
+ .container-nosotros div {
+     width: 45%;
+     
+ }
+
+ .container-nosotros p{
+     width: 45%;
+     color: white;
+     font-size: 1.3em;
+     text-align: center;
+     
+ }
+
+ .container-nosotros div img {
+     width: 100%;
+ }
+
+
+ @media (max-width: 600px) {
+
+    .container-nosotros {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .container-nosotros div {
+        width: 85%;
+        
+    }
+
+    .container-nosotros p {
+        width: 85%;
+    }
+
+
+  }
