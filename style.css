@@ -26,7 +26,10 @@ body {
 }
 
 header {
-    padding: 20px 0;
+    /* padding: 20px 0; */
+    height: 20vh;
+    display: flex;
+    align-items: center;
 }
 
 header .container {
@@ -77,6 +80,11 @@ ul li {
 }
 
 @media (max-width: 600px) {
+
+    .fondo {
+        display: none;
+    } 
+
     header .container {
         display: block;
         height: auto;
@@ -102,10 +110,15 @@ ul li {
 /* ----------  Comienzo estilos para HEROE  ------------- */
 
 #home {
-    height: 80vh;
+    height: 80vh; 
+    display: flex;
+    align-items: center;
 }
 .heroe {
-    width: 60%;
+    /* width: 65%; */
+    min-width: 65%;
+    min-height: 80%;
+    
     
     display: flex;
     justify-content: space-around;
@@ -119,13 +132,13 @@ ul li {
 
 
 .carousel {
-    max-width: 800px;
+    width: 30%; 
     margin: 0 auto;
     display: flex;
 }
 #imagen {
     width: 100%;
-    height: 400px;
+    min-height: 400px;
     background-size: cover;
 }
 
@@ -168,20 +181,48 @@ ul li {
 
 
 @media (max-width: 600px) {
+    #home {
+        display: block;
+        height: auto;
+    }
+
   .heroe {
     display: block;
     width: 95%;
-    border: 1px solid rgb(52, 38, 66);
+    height: auto;
+    padding: 0;
+    
   }
-  .carrusel {
-      width: 70%;
+  .carousel {
+      width: 80%;
       margin: 0 auto;
   }
 
   .text-heroe {
       width: 100%;
       gap: 0.5em;
+      background-color: rgb(1, 1, 29);
+      color: white;
+      padding: 20px;
+      margin-top: 20px;
   }
+
+  .text-heroe h1 {
+      font-size: 2em;
+      font-weight: 300;
+      margin-bottom: 20px;
+  }
+
+  .text-heroe ul {
+      gap: 1em;
+  }
+
+  .text-heroe ul h3 {
+    font-weight: 100;
+    font-size: 1em;
+    padding-left: 1rem;
+    color: white;
+}
 
   h1 {
       font-size: 1em;
@@ -266,13 +307,15 @@ ul li {
  }
 
  @media (max-width: 600px) {
-    #mamparas {
-        margin-top: 200px;
-    }
+    
 
     h2 {
-        margin: 10px auto;
+        margin-top: 50pxpx;
+        margin-bottom: 0px;
+        font-size: 2em;
     }
+
+    
 
     .container-cards {
         display: block;
@@ -282,6 +325,11 @@ ul li {
     .card {
         width: 85%;
         margin: 2em auto;
+    }
+
+    .text-mamparas {
+        width: 90%;
+        font-size: 1.2em;
     }
   }
 
@@ -354,7 +402,25 @@ form input {
     }
 
     .ejemplo {
+        width: 95%;
+        margin: 0 auto;
         order: 0;
+        margin-top: 20px;
+        margin-bottom: 10px;
+
+        border: 1px solid rgb(4, 4, 51);
+        border-radius: 5px;
+    }
+
+    .ejemplo h3 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+        
+    }
+
+    .ejemplo p {
+        margin: 30px auto;
+        width: 85%;
     }
 
     form{
@@ -447,15 +513,17 @@ form input {
 
 @media (max-width: 600px) {
 
+
     .container-galeria div {
-        width: 180px;
-        height: 180px;
+        width: 170px;
+        height: 170px;
         
     }
     .container-galeria {
-        width: 90%;
+        width: 95%;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 180px auto;
+        grid-template-rows: 170px auto;
+        gap: 5px;
         
     }
 
