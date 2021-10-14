@@ -19,6 +19,11 @@
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- Bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
     <!-- Estilos -->
     <link rel="stylesheet" href="style.css" />
 </head>
@@ -27,14 +32,15 @@
     <div class="fondo"></div>
     <header>
         <div class="container">
+            <div class="hamburguer" id="boton-hamburguesa"><i class="fas fa-bars" class="hamburguer"></i></div>
             <div class="logo">
                 <img src="./img/logo.png" alt="logo de NOMA -Aberturas de aluminio" />
             </div>
 
-            <nav>
+            <nav id="menuNav">
                 <ul>
                     <li><a href="">HOME</a></li>
-                    <li><a href="#mamparas">MAMPARAS</a></li>
+                    <li><a href="#mamparas" class="item-menu" onclick=cerrarMenu>MAMPARAS</a></li>
                     <li><a href="#presupuesto">PRESUPUESTO</a></li>
                     <li><a href="#galeria">GALERIA</a></li>
                     <li><a href="#nosotros">NOSOTROS</a></li>
@@ -64,9 +70,9 @@
         <section id="home">
             <div class="heroe">
                 <!-- <div class="carrusel"> -->
-                    <div class="carousel">
-                        <div id="imagen"></div>
-                    </div>
+                <div class="carousel">
+                    <div id="imagen"></div>
+                </div>
                 <!-- </div> -->
                 <div class="text-heroe">
                     <h1>MAMPARAS</h1>
@@ -81,7 +87,7 @@
                         </li>
                         <li>
                             <i class="fas fa-check"></i>
-                            <h3>Servicio de colocación.</h3>
+                            <h3 class="mayus">servicio de colocación.</h3>
                         </li>
                     </ul>
                 </div>
@@ -183,6 +189,9 @@
                         <label for="">Medida en cm (segun dibujo)</label>
                         <input type="number" name="" id="" />
                     </div>
+                    <p>* Guiarse con las instrucciones del dibujo de ejemplo, lo va a encontrar en
+                        debajo de este formulario.
+                    </p>
 
                     <div><input type="button" value="Enviar" class="button" /></div>
                 </form>
@@ -196,7 +205,7 @@
                             la mampara fija (flecha roja).
                             <br />
                             <br />
-                             IMPORTANTE: considere que debe dejar un espacio para poder
+                            IMPORTANTE: considere que debe dejar un espacio para poder
                             acceder a la ducha. Recomendamos que el espacio para el acceso
                             sea de 65cm por lo menos.
                         </p>
@@ -264,7 +273,13 @@
 
     <footer></footer>
 
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
     <script src="./app.js"></script>
+
 </body>
 
 </html>

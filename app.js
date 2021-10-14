@@ -57,3 +57,34 @@ window.onload = function () {
     renderizarImagen();
     playIntervalo();
 }
+
+
+// Funciones para el menu hamburguesa
+
+let $botonHamburguesa = document.querySelector("#boton-hamburguesa")
+let $menuNav = document.querySelector("#menuNav")
+let $itemsMenu = document.querySelector(".item-menu")
+
+function desplegarMenu (e) {
+    e.preventDefault()
+
+    if ($menuNav.classList.contains("open")){
+        $menuNav.classList.remove("open")
+        console.log("open");
+    } else {
+        $menuNav.classList.add("open")
+    }
+}
+
+function cerrarMenu(e) {
+    e.preventDefault()
+
+    if($menuNav.classList.contains("open")){
+        $menuNav.classList.remove("open")
+        console.log("close");
+    }
+}
+
+// Eventos
+$botonHamburguesa.addEventListener("click", desplegarMenu)
+$itemsMenu.addEventListener("click", cerrarMenu)

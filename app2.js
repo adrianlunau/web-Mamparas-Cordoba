@@ -14,6 +14,7 @@ window.onload = function () {
     let $imagen = document.querySelector("#imagen");
     let $botonPlay = document.querySelector("#play");
     let $botonStop = document.querySelector("stop");
+    
     let intervalo;
 
     //Funciones
@@ -77,3 +78,25 @@ window.onload = function () {
     renderizarImagen();
     playIntervalo();
 }
+
+
+// ---------------------------------------------------------
+
+// Funciones para el menu hamburguesa
+
+let $botonHamburguesa = document.querySelector("#boton-hamburguesa")
+let $menuNav = document.querySelector("#menuNav")
+
+function desplegarMenu (e) {
+    e.preventDefault()
+
+    if ($menuNav.classList.contains("open")){
+        $menuNav.classList.remove("open")
+        console.log("open");
+    } else {
+        $menuNav.classList.add("open")
+    }
+}
+
+// Eventos
+$botonHamburguesa.addEventListener("click", desplegarMenu)

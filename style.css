@@ -11,6 +11,10 @@ body {
     width: 100%;
 }
 
+.mayus {
+    text-transform: capitalize;
+}
+
 .fondo {
     background-image: url("./img/banner-heroe.jpg");
     background-repeat: no-repeat;
@@ -40,6 +44,10 @@ header .container {
     max-width: 1200px;
     margin: 0 auto;
     
+}
+
+.hamburguer {
+    display: none;
 }
 
 .logo {
@@ -81,22 +89,73 @@ ul li {
 
 @media (max-width: 600px) {
 
+    header {
+        background-color: rgb(224, 224, 224);
+    }
+
     .fondo {
         display: none;
     } 
 
     header .container {
-        display: block;
-        height: auto;
+        align-items: center;
+        height: 20vh;
         padding: 2em;
+        background-color: rgb(224, 224, 224);
     }
+
+    .hamburguer {
+        display: block;
+        font-size: 2em;
+        color: gray;
+        margin-right: 20px;
+    }
+    
     .logo {
         margin: 0 auto;
+    
     }
 
     nav {
-        display: none;
+        display: block;
+        width: 100%;
+        height: 80vh;
+        z-index: 100;
+        position: fixed;
+        left:  -100%;
+        top: 20vh;
+        text-align: center;
+
+        background-color: rgba(7, 7, 12, 0.8);
+
         
+    }
+
+    .open {
+        left: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0;
+        gap: 0;
+        margin-top: 20px;
+        width: 100%;
+        
+
+    }
+
+    nav ul li {
+        width: 80%;
+        border-bottom: 1px solid white;
+        padding: 20px;
+    }
+
+    nav ul li a {
+        color: white;
+
     }
 
     .iconos-header {
@@ -184,6 +243,7 @@ ul li {
     #home {
         display: block;
         height: auto;
+        background-color: rgb(224, 224, 224);
     }
 
   .heroe {
@@ -191,8 +251,11 @@ ul li {
     width: 95%;
     height: auto;
     padding: 0;
+    background-color: rgb(224, 224, 224);
+    padding-bottom: 0px;
+    }
     
-  }
+  
   .carousel {
       width: 80%;
       margin: 0 auto;
@@ -227,7 +290,9 @@ ul li {
   h1 {
       font-size: 1em;
   }
+
 }
+
 
 /* ---------- FIN HEROE ---------- */
 
@@ -404,7 +469,7 @@ form input {
     .ejemplo {
         width: 95%;
         margin: 0 auto;
-        order: 0;
+        /* order: 0; */
         margin-top: 20px;
         margin-bottom: 10px;
 
@@ -425,7 +490,7 @@ form input {
 
     form{
         width: 100%;
-        order: 1;
+        /* order: 1; */
     }
 
     form input {
