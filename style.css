@@ -684,6 +684,11 @@ form input, form select {
         
         bottom: 30px;
         right: 30px;
+        opacity: 50%;
+    }
+
+    .logo-wsp a img {
+        width: 60px;
     }
     
     }
