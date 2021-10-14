@@ -11,9 +11,7 @@ body {
     width: 100%;
 }
 
-.mayus {
-    text-transform: capitalize;
-}
+
 
 .fondo {
     background-image: url("./img/banner-heroe.jpg");
@@ -87,6 +85,11 @@ ul li {
     color: gray;
 }
 
+nav{
+    transition-property: left;
+    transition-duration: 0.7s;
+}
+
 @media (max-width: 600px) {
 
     header {
@@ -129,6 +132,8 @@ ul li {
         background-color: rgba(7, 7, 12, 0.8);
 
         
+
+        
     }
 
     .open {
@@ -151,6 +156,16 @@ ul li {
         width: 80%;
         border-bottom: 1px solid white;
         padding: 20px;
+    }
+
+    nav ul li:hover {
+        background-color: white;
+        opacity: 0.1;
+    }
+
+    nav ul li:active {
+        background-color: white;
+        opacity: 0.2;
     }
 
     nav ul li a {
@@ -419,7 +434,7 @@ form {
     margin: 0 auto;
   }
 
-form input {
+form input, form select {
     margin-bottom: 15px;
     width: 420px;
     padding: 10px;
@@ -493,7 +508,7 @@ form input {
         /* order: 1; */
     }
 
-    form input {
+    form input, form select {
         width: 100%;
     }
   }
@@ -592,6 +607,10 @@ form input {
         
     }
 
+    .etiqueta h3 {
+        font-size: 1.2em;
+    }
+
 
   }
 
@@ -647,6 +666,78 @@ form input {
     .container-nosotros p {
         width: 85%;
     }
+
+
+  }
+
+  /* ------------ LOGO WHATSAPP ---------------- */
+
+.logo-wsp {
+    position: fixed;
+    bottom: 60px;
+    right: 60px;
+}
+
+@media (max-width: 600px) {
+    
+    .logo-wsp {
+        
+        bottom: 30px;
+        right: 30px;
+    }
+    
+    }
+
+  /* ------------- Comienza FOOTER ---------------- */
+
+.container-footer {
+    height: 20vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.container-footer ul {
+    
+    display: flex;
+    gap: 1.5em;
+    margin: 0;
+
+}
+
+.container-footer ul li a i {
+    font-size: 1.5em;
+    color: rgb(39, 39, 41);
+    margin: 0;
+}
+
+.container-footer p {
+    margin: 0;
+    font-weight: 300;
+}
+
+@media (max-width: 600px) {
+
+    
+
+    .container-footer {
+        flex-direction: column;
+        gap: 1em;
+        height: auto;
+        padding: 1em;
+    }
+
+    .container-footer ul {
+    
+        display: flex;
+        gap: 1.5em;
+        margin: 0;
+        padding-left: 0;
+    
+    }
+    
 
 
   }

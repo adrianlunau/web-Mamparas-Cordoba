@@ -40,10 +40,10 @@
             <nav id="menuNav">
                 <ul>
                     <li><a href="">HOME</a></li>
-                    <li><a href="#mamparas" class="item-menu" onclick=cerrarMenu>MAMPARAS</a></li>
-                    <li><a href="#presupuesto">PRESUPUESTO</a></li>
-                    <li><a href="#galeria">GALERIA</a></li>
-                    <li><a href="#nosotros">NOSOTROS</a></li>
+                    <li><a href="#mamparas" class="item-menu">MAMPARAS</a></li>
+                    <li><a href="#presupuesto" class="item-menu">PRESUPUESTO</a></li>
+                    <li><a href="#galeria" class="item-menu">GALERIA</a></li>
+                    <li><a href="#nosotros" class="item-menu">NOSOTROS</a></li>
                 </ul>
             </nav>
 
@@ -58,7 +58,7 @@
                                 class="fab fa-instagram-square"></i></a>
                     </li>
                     <li>
-                        <a href="mailto:nomaaberuras@gmail.com" target="_blank"><i
+                        <a href="mailto:nomaaberturas@gmail.com" target="_blank"><i
                                 class="fas fa-envelope-square"></i></a>
                     </li>
                 </ul>
@@ -176,13 +176,22 @@
                     </div>
 
                     <div>
+                        <label for="">Para determinar la altura de la mapara indique:</label>
+                        <select name="OS">
+                            
+                            <option value="Ducha a piso">Ducha a piso</option>
+                            <option value="Bañera">Bañera</option>
+                            
+                        </select>
+                    </div>
+
+                    <div>
                         <label for="">Tipo de mampara</label>
-                        <input list="tipologias" />
-                        <datalist id="tipologias">
-                            <option value="Fija"></option>
-                            <option value="Rebatible"></option>
-                            <option value="Corrediza"></option>
-                        </datalist>
+                        <select id="tipologias">
+                            <option value="Fija">Fija</option>
+                            <option value="Rebatible">Rebatible</option>
+                            <option value="Corrediza">Corrediza</option>
+                        </select>
                     </div>
 
                     <div>
@@ -269,9 +278,43 @@
                 </div>
             </div>
         </section>
+        <section>
+            <div class="logo-wsp">
+                <a href=""><img width="80px" src="./img/logo-wsp.png" alt=""></a>
+                
+            </div>
+        </section>
     </main>
 
-    <footer></footer>
+    <footer>
+        <div class="container-footer">
+            <div class="logo-footer">
+                <img src="./img/logo.png" alt="logo de NOMA -Aberturas de aluminio" />
+            </div>
+
+            <p>Todos los derechos reservados</p>
+
+            <div class="iconos-footer">
+                <ul>
+                    <li>
+                        <a href="https://facebook.com/nomaaberturas" target="_blank"><i
+                                class="fab fa-facebook-square"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/nomaaberturas" target="_blank"><i
+                                class="fab fa-instagram-square"></i></a>
+                    </li>
+                    <li>
+                        <a href="mailto:nomaaberturas@gmail.com" target="_blank"><i
+                                class="fas fa-envelope-square"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+        </div>
+    </footer>
 
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

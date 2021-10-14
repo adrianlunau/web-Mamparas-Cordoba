@@ -63,7 +63,8 @@ window.onload = function () {
 
 let $botonHamburguesa = document.querySelector("#boton-hamburguesa")
 let $menuNav = document.querySelector("#menuNav")
-let $itemsMenu = document.querySelector(".item-menu")
+let $itemsMenu = document.querySelectorAll(".item-menu")
+console.log($itemsMenu);
 
 function desplegarMenu (e) {
     e.preventDefault()
@@ -76,8 +77,8 @@ function desplegarMenu (e) {
     }
 }
 
-function cerrarMenu(e) {
-    e.preventDefault()
+function cerrarMenu() {
+    
 
     if($menuNav.classList.contains("open")){
         $menuNav.classList.remove("open")
@@ -87,4 +88,8 @@ function cerrarMenu(e) {
 
 // Eventos
 $botonHamburguesa.addEventListener("click", desplegarMenu)
-$itemsMenu.addEventListener("click", cerrarMenu)
+
+// Como el querySelectAll devuelve un array debo recorrerlo para agregar el evento a cada uno
+$itemsMenu.forEach(element => {
+    element.addEventListener("click", cerrarMenu)
+});
